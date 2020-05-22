@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="451.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerHomePageController">
+   <children>
+      <Button layoutX="108.0" layoutY="105.0" mnemonicParsing="false" onAction="#personalInfo" text="Edit my personal info" />
+      <Button layoutX="108.0" layoutY="164.0" mnemonicParsing="false" onAction="#shoppingCart" prefHeight="31.0" prefWidth="161.0" text="My shopping cart" />
+      <Button layoutX="108.0" layoutY="218.0" mnemonicParsing="false" onAction="#searchForBooks" prefHeight="31.0" prefWidth="161.0" text="Search for a book" />
+      <Button fx:id="signout" layoutX="107.0" layoutY="270.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="161.0" text="Logout" />
+   </children>
+</AnchorPane>

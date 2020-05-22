@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="451.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShoppingCartController">
+   <children>
+      <TableView fx:id="table" layoutX="13.0" layoutY="75.0" prefHeight="286.0" prefWidth="410.0">
+        <columns>
+          <TableColumn fx:id="title" prefWidth="157.0" text="Book Title" />
+          <TableColumn fx:id="copies" prefWidth="133.0" text="Number of copies" />
+            <TableColumn fx:id="price" prefWidth="119.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="total" layoutX="81.0" layoutY="389.0" prefHeight="31.0" prefWidth="113.0" />
+      <Label layoutX="26.0" layoutY="394.0" prefHeight="21.0" prefWidth="64.0" text="Total :" />
+      <Button layoutX="250.0" layoutY="389.0" mnemonicParsing="false" onAction="#checkOut" text="Checkout" />
+      <Label layoutX="150.0" layoutY="21.0" prefHeight="31.0" prefWidth="135.0" text="Your shopping cart" />
+   </children>
+</AnchorPane>
